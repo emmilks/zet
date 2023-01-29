@@ -5,7 +5,7 @@
 The most common way to visualize this type of data is to use a bar or column
 chart.
 
-![Example of a barplot](./barplot_example.png)
+![Example of a barplot](./figures/barplot_example.png)
 
 
 The length of the bar represents the given amount. The bars can be flipped
@@ -33,7 +33,7 @@ Make dot plot
 
 Grouped bar plots are used for higher dimensional datasets.
 
-![Example of a grouped barplot](./grouped_bar_example.png)
+![Example of a grouped barplot](./figures/grouped_bar_example.png)
 
 Order the groupings in a way that makes sense overall for the dataset. Beware,
 some choices that may seem innocent at the time can have a big impact in how
@@ -51,5 +51,5 @@ Make plot with facets.
 - Fundamentals of Data Visualization: Chapter 6: Visualizing Amounts
 - Data Visualization - A Practical Introduction: Chapter 4.4: Geoms can
   transform data
-- ggplot2 reference documentation: geom_bar(), geom_col()
-- ggplot2 reference documentation: position_stack(), position_fill()
+- `ggplot2` reference documentation: `geom_bar()`, `geom_col()`
+- `ggplot2` reference documentation: `position_stack()`, `position_fill()`

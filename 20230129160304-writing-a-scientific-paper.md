@@ -1,10 +1,4 @@
-```{=org}
-#+filetags:   :communication:science:
-```
-```{=org}
-#+identifier: 20230129T154104
-```
-General guidelines for writing a an effective scientific paper.
+General guidelines for writing an effective scientific paper.
 
 ## The Introduction
 

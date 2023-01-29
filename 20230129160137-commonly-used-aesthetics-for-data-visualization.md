@@ -1,9 +1,3 @@
-```{=org}
-#+filetags:   :dataviz:
-```
-```{=org}
-#+identifier: 20230129T153317
-```
 # Aesthics
 
 -   Position - map continuous data

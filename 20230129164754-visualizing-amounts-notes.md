@@ -53,3 +53,5 @@ Make plot with facets.
   transform data
 - `ggplot2` reference documentation: `geom_bar()`, `geom_col()`
 - `ggplot2` reference documentation: `position_stack()`, `position_fill()`
+
+tags: #dataviz

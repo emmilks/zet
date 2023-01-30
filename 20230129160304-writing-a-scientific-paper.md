@@ -38,3 +38,5 @@ two paragraphs each:
 1.  How can we interpret our findings?
 2.  How do our findings relate to other work in the field?
 3.  What are the weaknesses/drawbacks of our work?
+
+tags: #dataviz #communication

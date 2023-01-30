@@ -4,3 +4,5 @@
 -   Prepare figures that make a clear point. Do not want to confuse or mislead
     the audience.
 -   Make your figures memorable. Get creative when it is feasible to do so.
+
+tags: #dataviz #communication

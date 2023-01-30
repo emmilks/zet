@@ -6,3 +6,5 @@
 -   Color - map continuous or discrete data
 -   Line Width - map continous data
 -   Line Style - map discrete data
+
+tags: #dataviz

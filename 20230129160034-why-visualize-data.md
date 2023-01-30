@@ -8,3 +8,6 @@ communication. R has a lot of features and extra packages that let you
 do all three of these topics extremely well. Better than most other
 programming languages. It was built by statisticians to do statistics
 with a computer.
+
+tags: #dataviz
+tags: #dataviz

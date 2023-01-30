@@ -2,7 +2,7 @@
 ** Bar Plots
 The most common way to visualize this type of data is to use a bar or
 column chart.
-#+begin_src R :exports both :results output graphics file :file ./figures/barplot_example.png
+#+begin_src R :exports both :results output graphics file :file ./images/dataviz/barplot_example.png
   library(tidyverse)
 
   boxoffice <- tibble(
@@ -20,7 +20,7 @@ column chart.
 #+end_src
 
 #+RESULTS:
-[[file:./figures/barplot_example.png]]
+[[file:./images/dataviz/barplot_example.png]]
 
 The length of the bar represents the given amount. The bars can be
 flipped horizontally if you have a lot of categories. It makes the plot
@@ -43,7 +43,7 @@ between categories.
 
 ** Grouped Bar Plots
 Grouped bar plots are used for higher dimensional datasets.
-#+begin_src R :exports both :results output graphics file :file ./figures/grouped_bar_example.png
+#+begin_src R :exports both :results output graphics file :file ./images/dataviz/grouped_bar_example.png
   library(ggplot2)
   library(palmerpenguins)
   
@@ -55,7 +55,7 @@ Grouped bar plots are used for higher dimensional datasets.
 #+end_src
 
 #+RESULTS:
-[[file:./figures/grouped_bar_example.png]]
+[[file:./images/dataviz/grouped_bar_example.png]]
 
 Order the groupings in a way that makes sense overall for the dataset.
 Be aware, some choices that may seem innocent at the time can have a big

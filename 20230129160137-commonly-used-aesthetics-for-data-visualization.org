@@ -1,4 +1,5 @@
-* Aesthics
+* Aesthetics
+
 - Position - map continuous data
 - Shape - map discrete data
 - Size - map continuous or discrete data

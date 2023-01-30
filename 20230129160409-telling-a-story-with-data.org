@@ -1,3 +1,5 @@
+* Data Storytelling
+
 - Every figure needs a clear purpose in the story arc.
   - introduction -> challenge -> action -> resolution
 - The complete arc usually requires at least two figures.

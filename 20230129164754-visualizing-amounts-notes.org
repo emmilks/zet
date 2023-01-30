@@ -2,9 +2,25 @@
 ** Bar Plots
 The most common way to visualize this type of data is to use a bar or
 column chart.
+#+begin_src R :exports both :results output graphics file :file ./figures/barplot_example.png
+  library(tidyverse)
 
-#+caption: Example of a barplot
-[[./figures/barplot_example.png]]
+  boxoffice <- tibble(
+    rank = 1.5,
+    title = c("Star Wars", "Jumanji", "Pitch Perfect 3", "Greatest Showman", "Ferdinand"),
+    amount = c(71.57, 36.16, 19.93, 8.81, 7.32) # million usd
+    )
+
+  ggplot(boxoffice, aes(amount, fct_reorder(title, amount))) +
+    geom_col(fill="steelblue") +
+    xlab("amount (in million USD)") +
+    ylab(NULL) +
+    labs(title="Top Box Office Earnings") +
+    theme_bw()
+#+end_src
+
+#+RESULTS:
+[[file:./figures/barplot_example.png]]
 
 The length of the bar represents the given amount. The bars can be
 flipped horizontally if you have a lot of categories. It makes the plot
@@ -25,19 +41,27 @@ longer represents the amount given. This is very misleading to the
 audience. With lots of categories, bars can obscure the differences
 between categories.
 
-Make dot plot
-
 ** Grouped Bar Plots
 Grouped bar plots are used for higher dimensional datasets.
+#+begin_src R :exports both :results output graphics file :file ./figures/grouped_bar_example.png
+  library(ggplot2)
+  library(palmerpenguins)
+  
+  penguins_nomissing <- na.omit(penguins) # remove all rows with any missing values
+  ggplot(penguins_nomissing, aes(sex, fill=species)) +
+    geom_bar(position = "dodge") +
+    labs(title="Penguins by sex and species") +
+    theme_bw()
+#+end_src
 
-#+caption: Example of a grouped barplot
-[[./figures/grouped_bar_example.png]]
+#+RESULTS:
+[[file:./figures/grouped_bar_example.png]]
 
 Order the groupings in a way that makes sense overall for the dataset.
-Beware, some choices that may seem innocent at the time can have a big
+Be aware, some choices that may seem innocent at the time can have a big
 impact in how the figures are perceived by the audience. You could
 wittingly or unwittingly mislead your audience into believing the wrong
-idea. (i.e. color, color scale, arrangement, etc.).
+idea. (i.e. color, color scale, arrangement, etc.).
 
 We can also use multiple plot panels (facets).
 

@@ -21,7 +21,6 @@ manager doesn't have to think to hard.
 
 #+end_src
 
-#+RESULTS:
 | species   | Biscoe | Dream | Torgersen |
 | Adelie    |     44 |    56 |        52 |
 | Chinstrap |        |    68 |           |
@@ -33,7 +32,6 @@ manager doesn't have to think to hard.
     pivot_longer(cols = -species, names_to = "island", values_to = "n")
 #+end_src
 
-#+RESULTS:
 | species   | island    | count |
 | Adelie    | Biscoe    |    44 |
 | Adelie    | Dream     |    56 |
@@ -44,3 +42,6 @@ manager doesn't have to think to hard.
 | Gentoo    | Biscoe    |   124 |
 | Gentoo    | Dream     |       |
 | Gentoo    | Torgersen |       |
+
+* References
+  - UT Austin DSC385

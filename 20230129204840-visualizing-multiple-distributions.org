@@ -44,3 +44,6 @@
    Ridgeline plots are vertically staggered density plots. They provide an
    artistic representation of the dataset. These plots are helpful at showing
    trends in the dataset across multiple distributions.
+
+* References
+  - UT Austin DSC385

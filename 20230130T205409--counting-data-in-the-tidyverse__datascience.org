@@ -3,7 +3,6 @@
 #+filetags:   :datascience:
 #+identifier: 20230130T205409
 
-Counting the number of occurences in a column of data
 #+begin_src R
   library(palmerpenguins)
   library(dplyr)
@@ -12,10 +11,12 @@ Counting the number of occurences in a column of data
     count(species, island)
 #+end_src
 
-#+RESULTS:
 | species   | island    | count |
 | Adelie    | Biscoe    |    44 |
 | Adelie    | Dream     |    56 |
 | Adelie    | Torgersen |    52 |
 | Chinstrap | Dream     |    68 |
 | Gentoo    | Biscoe    |   124 |
+
+* References
+  - UT Austin DSC385

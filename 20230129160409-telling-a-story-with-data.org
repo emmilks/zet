@@ -7,3 +7,6 @@
   mislead the audience.
 - Make your figures memorable. Get creative when it is feasible to do
   so.
+
+* References
+  - UT Austin DSC385

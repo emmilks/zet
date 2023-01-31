@@ -3,7 +3,6 @@
 #+filetags:   :datascience:
 #+identifier: 20230130T205704
 
-Add new columns to an existing dataset based on the existing columns.
 #+begin_src R
   library(palmerpenguins)
   library(dplyr)
@@ -15,7 +14,6 @@ Add new columns to an existing dataset based on the existing columns.
     head()
 #+end_src
 
-#+RESULTS:
 | species | island    | =flipper_length_mm= | =flipper_length_cm= | =flipper_length_in= |
 | Adelie  | Torgersen |               181 |              18.1 |   7.1259842519685 |
 | Adelie  | Torgersen |               186 |              18.6 |  7.32283464566929 |
@@ -23,3 +21,6 @@ Add new columns to an existing dataset based on the existing columns.
 | Adelie  | Torgersen |                   |                   |                   |
 | Adelie  | Torgersen |               193 |              19.3 |  7.59842519685039 |
 | Adelie  | Torgersen |               190 |                19 |  7.48031496062992 |
+
+* References
+  - UT Austin DSC385

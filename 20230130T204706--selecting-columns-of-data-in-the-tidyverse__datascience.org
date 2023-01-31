@@ -3,8 +3,6 @@
 #+filetags:   :datascience:
 #+identifier: 20230130T204706
 
-Selecting columns in a dataset.
-
 #+begin_src R
   library(palmerpenguins)
   library(dplyr)
@@ -14,7 +12,6 @@ Selecting columns in a dataset.
     head()
 #+end_src
 
-#+RESULTS:
 | species | island    | =bill_length_mm= |
 | Adelie  | Torgersen |           39.1 |
 | Adelie  | Torgersen |           39.5 |
@@ -22,3 +19,6 @@ Selecting columns in a dataset.
 | Adelie  | Torgersen |                |
 | Adelie  | Torgersen |           36.7 |
 | Adelie  | Torgersen |           39.3 |
+
+* References
+  - UT Austin DSC385

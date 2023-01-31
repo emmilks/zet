@@ -74,3 +74,6 @@ Make plot with facets.
 - =ggplot2= reference documentation: =geom_bar()=, =geom_col()=
 - =ggplot2= reference documentation: =position_stack()=,
   =position_fill()=
+
+* References
+  - UT Austin DSC385

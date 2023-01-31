@@ -20,7 +20,6 @@ We use joins to add columns from one table into another table.
   left_join(band_members, band_instruments)
 #+end_src
 
-#+RESULTS:
 | name | band    | plays  |
 | Mick | Stones  |        |
 | John | Beatles | guitar |
@@ -34,7 +33,6 @@ We use joins to add columns from one table into another table.
   right_join(band_members, band_instruments)
   #+end_src
 
-#+RESULTS:
 | name  | band    | plays  |
 | John  | Beatles | guitar |
 | Paul  | Beatles | bass   |
@@ -45,7 +43,6 @@ We use joins to add columns from one table into another table.
   inner_join(band_members, band_instruments)
   #+end_src
 
-#+RESULTS:
 | name | band    | plays  |
 | John | Beatles | guitar |
 | Paul | Beatles | bass   |
@@ -56,7 +53,6 @@ We use joins to add columns from one table into another table.
   full_join(band_members, band_instruments)
   #+end_src
 
-#+RESULTS:
 | name  | band    | plays  |
 | Mick  | Stones  |        |
 | John  | Beatles | guitar |
@@ -64,3 +60,6 @@ We use joins to add columns from one table into another table.
 | Keith |         | guitar |
 
 *Tip*: in case of doubt, use =left_join=. It is often the best choice for the job.
+
+* References
+  - UT Austin DSC385

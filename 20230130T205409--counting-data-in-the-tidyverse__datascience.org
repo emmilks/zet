@@ -1,0 +1,21 @@
+#+title:      counting data in the tidyverse
+#+date:       [2023-01-30 Mon 20:54]
+#+filetags:   :datascience:
+#+identifier: 20230130T205409
+
+Counting the number of occurences in a column of data
+#+begin_src R
+  library(palmerpenguins)
+  library(dplyr)
+
+  penguins |>
+    count(species, island)
+#+end_src
+
+#+RESULTS:
+| species   | island    | count |
+| Adelie    | Biscoe    |    44 |
+| Adelie    | Dream     |    56 |
+| Adelie    | Torgersen |    52 |
+| Chinstrap | Dream     |    68 |
+| Gentoo    | Biscoe    |   124 |

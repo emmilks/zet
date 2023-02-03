@@ -12,7 +12,7 @@ The most common way to visualize the spread of a dataset is the
 histogram. A histogram sorts the data into bins and counts the number of
 cases in each bin.
 
-``` {r}
+``` {R}
 library(ggplot2)
 
 ggplot(chickwts, aes(weight)) +
@@ -37,7 +37,7 @@ the spread of the data. The difference is that it produces a smooth line
 and the y-axis is scaled in proportion to the x-axis. The area under the
 curve is equal to one.
 
-``` {r}
+``` {R}
 library(ggplot2)
 
 ggplot(chickwts, aes(weight)) +

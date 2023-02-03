@@ -11,7 +11,7 @@ tags: [dataviz]
 The most common way to visualize this type of data is to use a bar or
 column chart.
 
-``` {r}
+``` {R}
 library(tidyverse)
 
 boxoffice <- tibble(
@@ -54,7 +54,7 @@ between categories.
 
 Grouped bar plots are used for higher dimensional datasets.
 
-``` {r}
+``` {R}
 library(ggplot2)
 library(palmerpenguins)
 

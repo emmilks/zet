@@ -4,7 +4,7 @@ date: 01-30-2023
 tags: [datascience, tidyverse]
 ---
 
-``` {r}
+``` {R}
 library(palmerpenguins)
 library(dplyr)
 

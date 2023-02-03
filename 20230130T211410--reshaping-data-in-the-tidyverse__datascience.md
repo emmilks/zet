@@ -12,7 +12,7 @@ your analysis. After the analysis, you should convert the data back into
 a wide format for the report so your manager doesn\'t have to think to
 hard.
 
-``` {r}
+``` {R}
 library(palmerpenguins)
 library(tidyverse)
 
@@ -30,7 +30,7 @@ penguins_wide <- penguins |>
   Gentoo      124
   ----------- -------- ------- -----------
 
-``` {r}
+``` {R}
 # Make it longer again
 penguins_wide |>
   pivot_longer(cols = -species, names_to = "island", values_to = "n")

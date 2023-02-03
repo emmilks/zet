@@ -9,7 +9,7 @@ We use joins to add columns from one table into another table.
 -   `left_join()` - take the table on the right and merge it
     with the table on the left based on a shared column.
 
-``` {r}
+``` {R}
 library(tidyverse)
 
 band_members = tibble(name = c("Mick", "John", "Paul"),
@@ -31,7 +31,7 @@ left_join(band_members, band_instruments)
 -   `right_join()` - take the table on the left and merge it
     with the table on the right based on a shared column.
 
-    ``` {r}
+    ``` {R}
     right_join(band_members, band_instruments)
     ```
 
@@ -45,7 +45,7 @@ left_join(band_members, band_instruments)
 -   `inner_join()` - keep the intersection of the two tables
     and toss out everything else.
 
-    ``` {r}
+    ``` {R}
     inner_join(band_members, band_instruments)
     ```
 
@@ -58,7 +58,7 @@ left_join(band_members, band_instruments)
 -   `full_join()` - union of the two tables. All information
     is retained.
 
-    ``` {r}
+    ``` {R}
     full_join(band_members, band_instruments)
     ```
 

@@ -1,18 +1,18 @@
-```{=org}
-#+filetags:   :dataviz:
-```
-```{=org}
-#+identifier: 20230129T212039
-```
+---
+title: visualizing a single distribution
+date: 01-29-2023
+tags: [dataviz]
+---
+
 # Visualizing Distributions
 
 ## Histogram
 
-The most common way to visualize the spead of a dataset is the
+The most common way to visualize the spread of a dataset is the
 histogram. A histogram sorts the data into bins and counts the number of
 cases in each bin.
 
-``` {.r org-language="R" exports="both" results="output graphics file" file="./images/dataviz/histogram-example.png"}
+``` {r}
 library(ggplot2)
 
 ggplot(chickwts, aes(weight)) +
@@ -24,7 +24,7 @@ ggplot(chickwts, aes(weight)) +
 
 ![](./images/dataviz/histogram-example.png)
 
-The width and center of the bins is set manally in `ggplot2`{.verbatim}.
+The width and center of the bins is set manually in `ggplot2`.
 If the width is too small, data that does not get exist is captured and
 the result is a spiky looking histogram. If the width is too big, you
 hide important features in the datasets. Show raw counts on the y-axis
@@ -37,7 +37,7 @@ the spread of the data. The difference is that it produces a smooth line
 and the y-axis is scaled in proportion to the x-axis. The area under the
 curve is equal to one.
 
-``` {.r org-language="R" exports="both" results="output graphics file" file="./images/dataviz/kde-example.png"}
+``` {r}
 library(ggplot2)
 
 ggplot(chickwts, aes(weight)) +
@@ -58,7 +58,7 @@ ggplot(chickwts, aes(weight)) +
         distributions. Flip the counts on the y-axis and point them in
         opposite directions.
     -   KDE\'s can be shown with two plots side by side (facets in
-        `ggplot2`{.verbatim}).
+        `ggplot2`).
 
 # References
 

@@ -1,9 +1,9 @@
-```{=org}
-#+filetags:   :dataviz:
-```
-```{=org}
-#+identifier: 20230130T220220
-```
+---
+title: coordinate systems and axes
+date: 01-29-2023
+tags: [dataviz]
+---
+
 # Coordinate Systems
 
 ## Cartesian Coordinates
@@ -25,7 +25,7 @@ inverting the log function. It should be easy for the reader to
 understand what is going on. The fix for this problem is to use the
 original data values using log spacing.
 
-``` {.r org-language="R" exports="both" results="output graphics file" file="./images/dataviz/log-scale.png"}
+``` {r}
 library(tidyverse)
 
 tx_counties <- read_csv("https://wilkelab.org/DSC385/datasets/US_census.csv") %>%
@@ -55,7 +55,7 @@ data mapped to calendar days. In polar coordinates, x-values are on the
 circular axis and y-values are on the radial axis. For the radial axis,
 start at y=0 and sweep counter-clockwise.
 
-``` {.r org-language="R" exports="both" results="output graphics file" file="./images/dataviz/polar-coordinates.png"}
+``` {r}
 library(tidyverse)
 
 temperatures <- read_csv("https://wilkelab.org/DSC385/datasets/tempnormals.csv") %>%

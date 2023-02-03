@@ -1,14 +1,14 @@
-```{=org}
-#+filetags:   :datascience:
-```
-```{=org}
-#+identifier: 20230201T224519
-```
+---
+title: visualizing proportions using ggplot2
+date: 02-01-2023
+tags: [dataviz]
+---
+
 The most common way to visualize proportions is the pie chart.
 
 INSERT R code
 
-The other way to visualize proportions is to use b ar charts.
+The other way to visualize proportions is to use b are charts.
 
 STACKED BAR CHART
 
@@ -36,7 +36,8 @@ best for your situation.
 
 ## Nested Proportions
 
-**Mosaic plots**: subdivides data into two dimensions. **Treemap
-plots**: the second dimension is merged into the rectangle and
-represented as the area of the rectangle. **Parallel set plots**: can
-show many subdivisions at once. The bands show how \*things are related.
+- **Mosaic plots**: subdivides data into two dimensions.
+- **Treemap plots**: the second dimension is merged into the rectangle and
+  represented as the area of the rectangle.
+- **Parallel set plots**: can show many subdivisions at once. The bands show
+  how \*things are related.

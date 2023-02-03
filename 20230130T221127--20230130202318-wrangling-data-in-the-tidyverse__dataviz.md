@@ -1,10 +1,10 @@
-```{=org}
-#+filetags:   :dataviz:
-```
-```{=org}
-#+identifier: 20230130T221127
-```
-# Wrangling Data in the Tidyverse {#wrangling-data-in-the-tidyverse-1}
+---
+title: wrangling data in the tidyverse
+date: 01-30-2023
+tags: [datascience]
+---
+
+# Wrangling Data in the Tidyverse
 
 Data wrangling is the process of performing operations on a dataset that
 change it some way in order to answer questions or clean it up for
@@ -15,16 +15,16 @@ analysis in its raw form.
 
   Operation        Tidyverse Function
   ---------------- -------------------------------------------------------------------------------
-  Pick rows        `filter()`{.verbatim}
-  Pick columns     `select()`{.verbatim}
-  Sort rows        `arrange()`{.verbatim}
-  Count things     `count()`{.verbatim}
-  Add columns      `mutate()`{.verbatim}
-  Analyze          `group_by()`{.verbatim} and `summarize()`{.verbatim}
-  Reshape          `pivot_wider()`{.verbatim} and `pivot_longer()`{.verbatim}
-  Combine tables   `left_join()`{.verbatim}, `inner_join()`{.verbatim}, `full_join()`{.verbatim}
+  Pick rows        `filter()`
+  Pick columns     `select()`
+  Sort rows        `arrange()`
+  Count things     `count()`
+  Add columns      `mutate()`
+  Analyze          `group_by()` and `summarize()`
+  Reshape          `pivot_wider()` and `pivot_longer()`
+  Combine tables   `left_join()`, `inner_join()`, `full_join()`
 
-`%>%`{.verbatim} and `|>`{.verbatim} are the pipe operators. Output from
+`%>%` and `|>` are the pipe operators. Output from
 the first function is fed as input nto the second function. It can be
 read as \"and then\".
 

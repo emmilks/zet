@@ -1,10 +1,10 @@
-```{=org}
-#+filetags:   :datascience:
-```
-```{=org}
-#+identifier: 20230130T204205
-```
-``` {.r org-language="R"}
+---
+title: filtering data in the tidyverse
+date: 01-30-2023
+tags: [datascience, tidyverse]
+---
+
+``` {r}
 library(palmerpenguins)
 library(dplyr)
 
@@ -14,7 +14,7 @@ penguins |>
 ```
 
   --------- -------- ----------------------------- ---------------------------- -------------------------------- ------------------------------ -------- ------
-  species   island   `bill_length_mm`{.verbatim}   `bill_depth_mm`{.verbatim}   `flipper_length_mm`{.verbatim}   `body_mass_grams`{.verbatim}   sex      year
+  species   island   `bill_length_mm`   `bill_depth_mm`   `flipper_length_mm`   `body_mass_grams`   sex      year
   Gentoo    Biscoe   46.1                          13.2                         211                              4500                           female   2007
   Gentoo    Biscoe   50                            16.3                         230                              5700                           male     2007
   Gentoo    Biscoe   48.7                          14.1                         210                              4450                           female   2007

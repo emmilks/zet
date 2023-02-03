@@ -1,10 +1,10 @@
-```{=org}
-#+filetags:   :datascience:
-```
-```{=org}
-#+identifier: 20230130T210039
-```
-``` {.r org-language="R"}
+---
+title: pivot tables in the tidyverse
+date: 01-30-2023
+tags: [datascience, tidyverse]
+---
+
+``` {r}
 library(palmerpenguins)
 library(dplyr)
 
@@ -19,7 +19,7 @@ penguins |>
 ```
 
   ----------- ----------- ----- ------------------------ --------------------------------- -----------------------------
-  species     island      n     `mean_mass`{.verbatim}   `max_flipper_length`{.verbatim}   `percent_female`{.verbatim}
+  species     island      n     mean_mass               max_flipper_length                 percent_female
   Adelie      Biscoe      44    3709.65909090909         203                               0.5
   Adelie      Dream       56    3688.39285714286         208                               0.490909090909091
   Adelie      Torgersen   52    3706.37254901961         210                               0.51063829787234

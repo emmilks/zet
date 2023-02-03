@@ -1,9 +1,9 @@
-```{=org}
-#+filetags:   :dataviz:
-```
-```{=org}
-#+identifier: 20230130T220307
-```
+---
+title: writing a scientific paper
+date: 01-29-2023
+tags: [communication, datascience]
+---
+
 General guidelines for writing an effective scientific paper.
 
 ## The Introduction

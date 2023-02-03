@@ -1,9 +1,9 @@
-```{=org}
-#+filetags:   :dataviz:
-```
-```{=org}
-#+identifier: 20230130T215443
-```
+---
+title: telling a story with data
+date: 01-29-2023
+tags: [dataviz]
+---
+
 # Data Storytelling
 
 -   Every figure needs a clear purpose in the story arc.

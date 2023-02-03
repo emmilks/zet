@@ -1,10 +1,10 @@
-```{=org}
-#+filetags:   :datascience:
-```
-```{=org}
-#+identifier: 20230130T205152
-```
-``` {.r org-language="R"}
+---
+title: sorting rows in the tidyverse
+date: 01-30-2023
+tags: [datascience, tidyverse]
+---
+
+``` {r}
 library(palmerpenguins)
 library(dplyr)
 
@@ -14,7 +14,7 @@ penguins |>
 ```
 
   --------- ----------- ----------------------------- ---------------------------- -------------------------------- ------------------------------ -------- ------
-  species   island      `bill_length_mm`{.verbatim}   `bill_depth_mm`{.verbatim}   `flipper_length_mm`{.verbatim}   `body_mass_grams`{.verbatim}   sex      year
+  species   island      `bill_length_mm`   `bill_depth_mm`   `flipper_length_mm`   `body_mass_grams`   sex      year
   Adelie    Dream       32.1                          15.5                         188                              3050                           female   2009
   Adelie    Dream       33.1                          16.1                         178                              2900                           female   2008
   Adelie    Torgersen   33.5                          19                           190                              3600                           female   2008

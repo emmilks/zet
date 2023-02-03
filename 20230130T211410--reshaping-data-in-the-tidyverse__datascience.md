@@ -1,9 +1,9 @@
-```{=org}
-#+filetags:   :datascience:
-```
-```{=org}
-#+identifier: 20230130T211410
-```
+---
+title: reshaping data in the tidyverse
+date: 01-30-2023
+tags: [datascience, tidyverse]
+---
+
 Long format data is better for machines and doing analysis. Wide format
 data is better for humans. It is more intuitive and easier to read. It
 is common, as a data analyst, that you will receive data in a wide
@@ -12,7 +12,7 @@ your analysis. After the analysis, you should convert the data back into
 a wide format for the report so your manager doesn\'t have to think to
 hard.
 
-``` {.r org-language="R" session="yes"}
+``` {r}
 library(palmerpenguins)
 library(tidyverse)
 
@@ -26,11 +26,11 @@ penguins_wide <- penguins |>
   ----------- -------- ------- -----------
   species     Biscoe   Dream   Torgersen
   Adelie      44       56      52
-  Chinstrap            68      
-  Gentoo      124              
+  Chinstrap            68
+  Gentoo      124
   ----------- -------- ------- -----------
 
-``` {.r org-language="R" session="yes"}
+``` {r}
 # Make it longer again
 penguins_wide |>
   pivot_longer(cols = -species, names_to = "island", values_to = "n")
@@ -41,12 +41,12 @@ penguins_wide |>
   Adelie      Biscoe      44
   Adelie      Dream       56
   Adelie      Torgersen   52
-  Chinstrap   Biscoe      
+  Chinstrap   Biscoe
   Chinstrap   Dream       68
-  Chinstrap   Torgersen   
+  Chinstrap   Torgersen
   Gentoo      Biscoe      124
-  Gentoo      Dream       
-  Gentoo      Torgersen   
+  Gentoo      Dream
+  Gentoo      Torgersen
   ----------- ----------- -------
 
 # References

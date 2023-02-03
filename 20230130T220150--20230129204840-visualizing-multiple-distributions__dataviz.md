@@ -1,10 +1,10 @@
-```{=org}
-#+filetags:   :dataviz:
-```
-```{=org}
-#+identifier: 20230130T220150
-```
-# Visualizing Multiple Distributions {#visualizing-multiple-distributions-1}
+---
+title: visualizing multiple distributions
+date: 01-29-2023
+tags: [dataviz]
+---
+
+# Visualizing Multiple Distributions
 
 Visualizing multiple distributions can be tricky if you do not want to
 confuse your audience. In general, histograms and kernel density plots

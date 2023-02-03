@@ -1,10 +1,10 @@
-```{=org}
-#+filetags:   :datascience:
-```
-```{=org}
-#+identifier: 20230130T205409
-```
-``` {.r org-language="R"}
+---
+title: counting data in the tidyverse
+date: 01-30-2023
+tags: [datascience, tidyverse]
+---
+
+``` {r}
 library(palmerpenguins)
 library(dplyr)
 

@@ -1,9 +1,9 @@
-```{=org}
-#+filetags:   :dataviz:
-```
-```{=org}
-#+identifier: 20230130T220210
-```
+---
+title: visualizing amounts notes
+date: 01-29-2023
+tags: [dataviz]
+---
+
 # Visualizing Amounts
 
 ## Bar Plots
@@ -11,7 +11,7 @@
 The most common way to visualize this type of data is to use a bar or
 column chart.
 
-``` {.r org-language="R" exports="both" results="output graphics file" file="./images/dataviz/barplot_example.png"}
+``` {r}
 library(tidyverse)
 
 boxoffice <- tibble(
@@ -54,7 +54,7 @@ between categories.
 
 Grouped bar plots are used for higher dimensional datasets.
 
-``` {.r org-language="R" exports="both" results="output graphics file" file="./images/dataviz/grouped_bar_example.png"}
+``` {r}
 library(ggplot2)
 library(palmerpenguins)
 

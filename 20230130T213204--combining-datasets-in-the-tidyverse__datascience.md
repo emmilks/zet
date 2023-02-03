@@ -1,15 +1,15 @@
-```{=org}
-#+filetags:   :datascience:
-```
-```{=org}
-#+identifier: 20230130T213204
-```
+---
+title: combining datasets in the tidyverse
+date: 01-30-2023
+tags: [datascience, tidyverse]
+---
+
 We use joins to add columns from one table into another table.
 
--   `left_join()`{.verbatim} - take the table on the right and merge it
+-   `left_join()` - take the table on the right and merge it
     with the table on the left based on a shared column.
 
-``` {.r org-language="R" session="yes"}
+``` {r}
 library(tidyverse)
 
 band_members = tibble(name = c("Mick", "John", "Paul"),
@@ -23,15 +23,15 @@ left_join(band_members, band_instruments)
 
   ------ --------- --------
   name   band      plays
-  Mick   Stones    
+  Mick   Stones
   John   Beatles   guitar
   Paul   Beatles   bass
   ------ --------- --------
 
--   `right_join()`{.verbatim} - take the table on the left and merge it
+-   `right_join()` - take the table on the left and merge it
     with the table on the right based on a shared column.
 
-    ``` {.r org-language="R" session="yes"}
+    ``` {r}
     right_join(band_members, band_instruments)
     ```
 
@@ -42,10 +42,10 @@ left_join(band_members, band_instruments)
   Keith             guitar
   ------- --------- --------
 
--   `inner_join()`{.verbatim} - keep the intersection of the two tables
+-   `inner_join()` - keep the intersection of the two tables
     and toss out everything else.
 
-    ``` {.r org-language="R" session="yes"}
+    ``` {r}
     inner_join(band_members, band_instruments)
     ```
 
@@ -55,22 +55,22 @@ left_join(band_members, band_instruments)
   Paul   Beatles   bass
   ------ --------- --------
 
--   `full_join()`{.verbatim} - union of the two tables. All information
+-   `full_join()` - union of the two tables. All information
     is retained.
 
-    ``` {.r org-language="R" session="yes"}
+    ``` {r}
     full_join(band_members, band_instruments)
     ```
 
   ------- --------- --------
   name    band      plays
-  Mick    Stones    
+  Mick    Stones
   John    Beatles   guitar
   Paul    Beatles   bass
   Keith             guitar
   ------- --------- --------
 
-**Tip**: in case of doubt, use `left_join`{.verbatim}. It is often the
+**Tip**: in case of doubt, use `left_join`. It is often the
 best choice for the job.
 
 # References

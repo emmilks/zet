@@ -92,7 +92,7 @@ Ridgeline plots are vertically staggered density plots. They provide an
 artistic representation of the dataset. These plots are helpful at
 showing trends in the dataset across multiple distributions.
 
-#+begin_src R :exports both :results output graphics file :file ./images/dataviz/ridgeline-plot-example.png
+#+begin_src R :exports both :results output graphics file :file ./images/dataviz/ridgeline-plot-example.png :session
   ggplot(lincoln_temps, aes(mean_temp, month_long)) +
     geom_density_ridges()
 #+end_src

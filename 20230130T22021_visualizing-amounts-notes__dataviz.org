@@ -1,32 +1,25 @@
----
-title: visualizing amounts notes
-date: 01-29-2023
-tags: [dataviz]
----
-
-# Visualizing Amounts
-
-## Bar Plots
-
+* Visualizing Amounts
+:PROPERTIES:
+:CUSTOM_ID: visualizing-amounts
+:END:
+** Bar Plots
+:PROPERTIES:
+:CUSTOM_ID: bar-plots
+:END:
 The most common way to visualize this type of data is to use a bar or
 column chart.
 
-``` {R}
-library(tidyverse)
+``` {R} library(tidyverse)
 
-boxoffice <- tibble(
-  rank = 1.5,
-  title = c("Star Wars", "Jumanji", "Pitch Perfect 3", "Greatest Showman", "Ferdinand"),
-  amount = c(71.57, 36.16, 19.93, 8.81, 7.32) # million usd
-  )
+boxoffice <- tibble( rank = 1.5, title = c("Star Wars", "Jumanji",
+"Pitch Perfect 3", "Greatest Showman", "Ferdinand"), amount = c(71.57,
+36.16, 19.93, 8.81, 7.32) # million usd )
 
 ggplot(boxoffice, aes(amount, fct_reorder(title, amount))) +
-  geom_col(fill="steelblue") +
-  xlab("amount (in million USD)") +
-  ylab(NULL) +
-  labs(title="Top Box Office Earnings") +
-  theme_bw()
-```
+geom_col(fill="steelblue") + xlab("amount (in million USD)") +
+ylab(NULL) + labs(title="Top Box Office Earnings") + theme_bw()
+
+#+begin_example
 
 ![](./images/dataviz/barplot_example.png)
 
@@ -63,30 +56,33 @@ ggplot(penguins_nomissing, aes(sex, fill=species)) +
   geom_bar(position = "dodge") +
   labs(title="Penguins by sex and species") +
   theme_bw()
-```
+#+end_example
 
-![](./images/dataviz/grouped_bar_example.png)
+[[./images/dataviz/grouped_bar_example.png]]
 
 Order the groupings in a way that makes sense overall for the dataset.
 Be aware, some choices that may seem innocent at the time can have a big
 impact in how the figures are perceived by the audience. You could
 wittingly or unwittingly mislead your audience into believing the wrong
-idea. (i.e. color, color scale, arrangement, etc.).
+idea. (i.e. color, color scale, arrangement, etc.).
 
 We can also use multiple plot panels (facets).
 
 Make plot with facets.
 
-# Further Reading
+* Further Reading
+:PROPERTIES:
+:CUSTOM_ID: further-reading
+:END:
+- Fundamentals of Data Visualization: Chapter 6: Visualizing Amounts
+- Data Visualization - A Practical Introduction: Chapter 4.4: Geoms can
+  transform data
+- =ggplot2= reference documentation: =geom_bar()=, =geom_col()=
+- =ggplot2= reference documentation: =position_stack()=,
+  =position_fill()=
 
--   Fundamentals of Data Visualization: Chapter 6: Visualizing Amounts
--   Data Visualization - A Practical Introduction: Chapter 4.4: Geoms
-    can transform data
--   `ggplot2`{.verbatim} reference documentation:
-    `geom_bar()`{.verbatim}, `geom_col()`{.verbatim}
--   `ggplot2`{.verbatim} reference documentation:
-    `position_stack()`{.verbatim}, `position_fill()`{.verbatim}
-
-# References
-
--   UT Austin DSC385
+* References
+:PROPERTIES:
+:CUSTOM_ID: references
+:END:
+- UT Austin DSC385

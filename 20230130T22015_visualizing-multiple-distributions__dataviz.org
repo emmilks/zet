@@ -1,11 +1,7 @@
----
-title: visualizing multiple distributions
-date: 01-29-2023
-tags: [dataviz]
----
-
-# Visualizing Multiple Distributions
-
+* Visualizing Multiple Distributions
+:PROPERTIES:
+:CUSTOM_ID: visualizing-multiple-distributions
+:END:
 Visualizing multiple distributions can be tricky if you do not want to
 confuse your audience. In general, histograms and kernel density plots
 are a poor choice when you need to visualize multiple distributions. The
@@ -15,22 +11,25 @@ One way to solve this problem is to give each distribution its own
 panel, but it is difficult to compare distributions. This is especially
 true when you have more than two distributions.
 
-## Boxplot
-
+** Boxplot
+:PROPERTIES:
+:CUSTOM_ID: boxplot
+:END:
 The best thing to do is go back to basics and use boxplots.
 
-### Example
+*** Example
+:PROPERTIES:
+:CUSTOM_ID: example
+:END:
+```{r} library(tidyverse) library(ggforce) library(ggridges)
 
-```{r}
-library(tidyverse)
-library(ggforce)
-library(ggridges)
-
-lincoln_temps <- readRDS(url("https://wilkelab.org/DSC385/datasets/lincoln_temps.rds"))
+lincoln_temps <-
+readRDS(url("https://wilkelab.org/DSC385/datasets/lincoln_temps.rds"))
 
 ggplot(lincoln_temps, aes(month, mean_temp)) +
-  geom_boxplot(fill="skyblue")
-```
+geom_boxplot(fill="skyblue")
+
+#+begin_example
 
 A box plot is read as follows:
 
@@ -53,50 +52,48 @@ degrees and mirrors it across the y-axis.
 ```{r}
 ggplot(lincoln_temps, aes(month, mean_temp)) +
   geom_violin(fill="skyblue")
-```
+#+end_example
 
 Violen plots are the most effective when you have a lot of data points.
 For small datasets, you can use a strip chart. A strip chart allows you
 to see the raw data instead of an abstact representation. Horizonatal
 jittering may be necessary to avoid overlapping points.
 
-### Example
+*** Example
+:PROPERTIES:
+:CUSTOM_ID: example-1
+:END:
+={r} ggplot(lincoln_temps, aes(month, mean_temp)) +   geom_point(size = 0.75, # reduce point size to minimize overplotting              position = position_jitter(                width = 0.15, # amount of jitter in horizontal direction                height = 0 # amount of jitter in vertical direction              ))=
 
-```{r}
-ggplot(lincoln_temps, aes(month, mean_temp)) +
-  geom_point(size = 0.75, # reduce point size to minimize overplotting
-             position = position_jitter(
-               width = 0.15, # amount of jitter in horizontal direction
-               height = 0 # amount of jitter in vertical direction
-             ))
-```
-
-## Sina Plot
-
+** Sina Plot
+:PROPERTIES:
+:CUSTOM_ID: sina-plot
+:END:
 You can combine a strip chart with jittering and a violen plot to get a
 sina plot. The jittered points are in proportion to the violen.
 
-### Example
+*** Example
+:PROPERTIES:
+:CUSTOM_ID: example-2
+:END:
+={r} ggplot(lincoln_temps, aes(month, mean_temp)) +   geom_violin(fill="skyblue", color = NA) + # violens in background   geom_sina(size = 0.75) # sina jittered points in foreground=
 
-```{r}
-ggplot(lincoln_temps, aes(month, mean_temp)) +
-  geom_violin(fill="skyblue", color = NA) + # violens in background
-  geom_sina(size = 0.75) # sina jittered points in foreground
-```
-
-## Ridgeline Plot
-
+** Ridgeline Plot
+:PROPERTIES:
+:CUSTOM_ID: ridgeline-plot
+:END:
 Ridgeline plots are vertically staggered density plots. They provide an
 artistic representation of the dataset. These plots are helpful at
 showing trends in the dataset across multiple distributions.
 
-### Example
+*** Example
+:PROPERTIES:
+:CUSTOM_ID: example-3
+:END:
+={r} ggplot(lincoln_temps, aes(mean_temp, month_long)) +   geom_density_ridges()=
 
-```{r}
-ggplot(lincoln_temps, aes(mean_temp, month_long)) +
-  geom_density_ridges()
-```
-
-# References
-
--   UT Austin DSC385
+* References
+:PROPERTIES:
+:CUSTOM_ID: references
+:END:
+- UT Austin DSC385

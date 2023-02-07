@@ -1,0 +1,16 @@
+``` {R} library(palmerpenguins) library(dplyr)
+
+penguins |> count(species, island) ```
+
+| species   | island    | count |
+| Adelie    | Biscoe    | 44    |
+| Adelie    | Dream     | 56    |
+| Adelie    | Torgersen | 52    |
+| Chinstrap | Dream     | 68    |
+| Gentoo    | Biscoe    | 124   |
+
+* References
+:PROPERTIES:
+:CUSTOM_ID: references
+:END:
+- UT Austin DSC385

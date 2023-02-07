@@ -1,26 +1,23 @@
----
-title: visualizing a single distribution
-date: 01-29-2023
-tags: [dataviz]
----
-
-# Visualizing Distributions
-
-## Histogram
-
+* Visualizing Distributions
+:PROPERTIES:
+:CUSTOM_ID: visualizing-distributions
+:END:
+** Histogram
+:PROPERTIES:
+:CUSTOM_ID: histogram
+:END:
 The most common way to visualize the spread of a dataset is the
 histogram. A histogram sorts the data into bins and counts the number of
 cases in each bin.
 
-``` {R}
-library(ggplot2)
+``` {R} library(ggplot2)
 
 ggplot(chickwts, aes(weight)) +
-  geom_histogram(color="black",fill="#E9EC6B", binwidth=12, center=112) +
-  labs(title = "Distribution of Chick Weights") +
-  xlab("weight (g)") +
-  theme_bw()
-```
+geom_histogram(color="black",fill="#E9EC6B", binwidth=12, center=112) +
+labs(title = "Distribution of Chick Weights") + xlab("weight (g)") +
+theme_bw()
+
+#+begin_example
 
 ![](./images/dataviz/histogram-example.png)
 
@@ -45,21 +42,24 @@ ggplot(chickwts, aes(weight)) +
   labs(title = "Distribution of Chick Weights") +
   xlab("weight (g)") +
   theme_bw()
-```
+#+end_example
 
-![](./images/dataviz/kde-example.png)
+[[./images/dataviz/kde-example.png]]
 
-## Issues
+** Issues
+:PROPERTIES:
+:CUSTOM_ID: issues
+:END:
+- KDE's can show non-sensical data such as age falling below zero.
+- Displaying more than one distribution with a histogram or KDE can lead
+  to confusion.
+  - An alternative is to create a pyramid if you have two distributions.
+    Flip the counts on the y-axis and point them in opposite directions.
+  - KDE's can be shown with two plots side by side (facets in
+    =ggplot2=).
 
--   KDE\'s can show non-sensical data such as age falling below zero.
--   Displaying more than one distribution with a histogram or KDE can
-    lead to confusion.
-    -   An alternative is to create a pyramid if you have two
-        distributions. Flip the counts on the y-axis and point them in
-        opposite directions.
-    -   KDE\'s can be shown with two plots side by side (facets in
-        `ggplot2`).
-
-# References
-
--   UT Austin DSC-385
+* References
+:PROPERTIES:
+:CUSTOM_ID: references
+:END:
+- UT Austin DSC-385

@@ -1,7 +1,4 @@
 * Aesthetics
-:PROPERTIES:
-:CUSTOM_ID: aesthetics
-:END:
 - Position - map continuous data
 - Shape - map discrete data
 - Size - map continuous or discrete data
@@ -10,7 +7,4 @@
 - Line Style - map discrete data
 
 * References
-:PROPERTIES:
-:CUSTOM_ID: references
-:END:
 - UT Austin DSC385

@@ -15,9 +15,7 @@ The bars together sum up to 100% of the data. This makes it easy to
 compare relative amounts.
 
 ** Pros and Cons of these Approaches
-:PROPERTIES:
-:CUSTOM_ID: pros-and-cons-of-these-approaches
-:END:
+
 |                                          | Pie Chart | Stacked Bar Chart | Staggered Bar Chart |
 |------------------------------------------+-----------+-------------------+---------------------|
 | Easy comparisons of relative proportions | no        | no                | yes                 |
@@ -31,9 +29,7 @@ No one visualization fits for all scenarios. Pick the one that works
 best for your situation.
 
 ** Nested Proportions
-:PROPERTIES:
-:CUSTOM_ID: nested-proportions
-:END:
+
 - *Mosaic plots*: subdivides data into two dimensions.
 - *Treemap plots*: the second dimension is merged into the rectangle and
   represented as the area of the rectangle.

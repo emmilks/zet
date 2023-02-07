@@ -1,3 +1,5 @@
+* Reshape the data
+
 Long format data is better for machines and doing analysis. Wide format
 data is better for humans. It is more intuitive and easier to read. It
 is common, as a data analyst, that you will receive data in a wide
@@ -6,29 +8,26 @@ your analysis. After the analysis, you should convert the data back into
 a wide format for the report so your manager doesn't have to think to
 hard.
 
-``` {R} library(palmerpenguins) library(tidyverse)
+#+begin_src R :session
+library(palmerpenguins)
+library(tidyverse)
+#+end_src
 
-* Reshape the data
-:PROPERTIES:
-:CUSTOM_ID: reshape-the-data
-:END:
+#+begin_src R :session
 penguins_wide <- penguins |> count(species, island) |>
 pivot_wider(names_from = "island", values_from = "n")
+#+end_src
 
-#+begin_example
+| species   | Biscoe | Dream | Torgersen |
+| Adelie    |     44 |    56 |        52 |
+| Chinstrap |        |    68 |           |
+| Gentoo    |    124 |       |           |
 
-  ----------- -------- ------- -----------
-  species     Biscoe   Dream   Torgersen
-  Adelie      44       56      52
-  Chinstrap            68
-  Gentoo      124
-  ----------- -------- ------- -----------
-
-``` {R}
+#+begin_src R
 # Make it longer again
 penguins_wide |>
   pivot_longer(cols = -species, names_to = "island", values_to = "n")
-#+end_example
+#+end_src
 
 | species   | island    | count |
 | Adelie    | Biscoe    | 44    |
@@ -42,7 +41,4 @@ penguins_wide |>
 | Gentoo    | Torgersen |       |
 
 * References
-:PROPERTIES:
-:CUSTOM_ID: references
-:END:
 - UT Austin DSC385

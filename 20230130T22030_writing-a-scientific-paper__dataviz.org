@@ -1,9 +1,7 @@
 General guidelines for writing an effective scientific paper.
 
 ** The Introduction
-:PROPERTIES:
-:CUSTOM_ID: the-introduction
-:END:
+
 The introduction should be three paragraphs long. It should provide a
 general overview of the current research, the unknowns, and what was
 done in the experiment.
@@ -15,9 +13,7 @@ done in the experiment.
    what was found?
 
 ** The Results
-:PROPERTIES:
-:CUSTOM_ID: the-results
-:END:
+
 You need to explain why you did what you did before you describe how you
 did it. Each result should follow this breakdown.
 
@@ -26,9 +22,7 @@ did it. Each result should follow this breakdown.
 3. What did we observe?
 
 ** The Discussion
-:PROPERTIES:
-:CUSTOM_ID: the-discussion
-:END:
+
 This is where is you interpret and discuss the meaning of the results.
 In the first paragraph repeat everything said so far.
 
@@ -46,7 +40,4 @@ two paragraphs each:
 3. What are the weaknesses/drawbacks of our work?
 
 * References
-:PROPERTIES:
-:CUSTOM_ID: references
-:END:
 - UT Austin DSC385

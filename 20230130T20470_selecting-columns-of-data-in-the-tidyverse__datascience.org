@@ -1,6 +1,12 @@
-``` {R} library(palmerpenguins) library(dplyr)
+#+begin_src R
+  library(palmerpenguins)
+  library(dplyr)
 
-penguins |> select(species, island, bill_length_mm) |> head() ```
+  penguins |>
+    select(species, island, bill_length_mm) |>
+    head()
+
+#+end_src
 
 | species | island    | bill_length_mm |
 | Adelie  | Torgersen | 39.1           |
@@ -11,7 +17,4 @@ penguins |> select(species, island, bill_length_mm) |> head() ```
 | Adelie  | Torgersen | 39.3           |
 
 * References
-:PROPERTIES:
-:CUSTOM_ID: references
-:END:
 - UT Austin DSC385

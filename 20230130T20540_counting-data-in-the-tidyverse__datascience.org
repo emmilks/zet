@@ -1,6 +1,11 @@
-``` {R} library(palmerpenguins) library(dplyr)
+#+begin_src R
+  library(palmerpenguins)
+  library(dplyr)
 
-penguins |> count(species, island) ```
+  penguins |>
+    count(species, island)
+
+#+end_src
 
 | species   | island    | count |
 | Adelie    | Biscoe    | 44    |
@@ -10,7 +15,4 @@ penguins |> count(species, island) ```
 | Gentoo    | Biscoe    | 124   |
 
 * References
-:PROPERTIES:
-:CUSTOM_ID: references
-:END:
 - UT Austin DSC385

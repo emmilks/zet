@@ -1,25 +1,19 @@
 * Wrangling Data in the Tidyverse
-:PROPERTIES:
-:CUSTOM_ID: wrangling-data-in-the-tidyverse
-:END:
 Data wrangling is the process of performing operations on a dataset that
 change it some way in order to answer questions or clean it up for
 future analysis. Data in the real world is often messy and not fit for
 analysis in its raw form.
 
 ** Elementary Data Manipulations
-:PROPERTIES:
-:CUSTOM_ID: elementary-data-manipulations
-:END:
-| Operation      | Tidyverse Function                           |
-|----------------+----------------------------------------------|
-| Pick rows      | =filter()=                                   |
-| Pick columns   | =select()=                                   |
-| Sort rows      | =arrange()=                                  |
-| Count things   | =count()=                                    |
-| Add columns    | =mutate()=                                   |
-| Analyze        | =group_by()= and =summarize()=               |
-| Reshape        | =pivot_wider()= and =pivot_longer()=         |
+| Operation      | Tidyverse Function                     |
+|----------------+----------------------------------------|
+| Pick rows      | =filter()=                               |
+| Pick columns   | =select()=                               |
+| Sort rows      | =arrange()=                              |
+| Count things   | =count()=                                |
+| Add columns    | =mutate()=                               |
+| Analyze        | =group_by()= and =summarize()=             |
+| Reshape        | =pivot_wider()= and =pivot_longer()=       |
 | Combine tables | =left_join()=, =inner_join()=, =full_join()= |
 
 =%>%= and =|>= are the pipe operators. Output from the first function is
@@ -45,7 +39,4 @@ tidyverse]]
 [[denote:20230130T213204][combining datasets in the tidyverse]]
 
 * References
-:PROPERTIES:
-:CUSTOM_ID: references
-:END:
 - UT Austin DSC385

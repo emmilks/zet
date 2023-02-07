@@ -1,7 +1,4 @@
 * Color Scales
-:PROPERTIES:
-:CUSTOM_ID: color-scales
-:END:
 There are four uses of color in data visualization.
 
 1. Distinguish categories (qualitative)
@@ -23,9 +20,6 @@ appropriate color scale for each of these four categories or you could
 confuse or mislead your audience.
 
 ** =ggplot2= Color Scale Functions are a Mess
-:PROPERTIES:
-:CUSTOM_ID: ggplot2-color-scale-functions-are-a-mess
-:END:
 This table is not exhaustive.
 
 | scale function                  | aesthetic  | data type   | palette type            |
@@ -49,16 +43,10 @@ Scale name: =scale_<aesthetic>_<datatype>_<colorscale>()=
 - colorscale: qualitative, sequential, diverging, divergingx
 
 ** Discrete, Qualitative Scale
-:PROPERTIES:
-:CUSTOM_ID: discrete-qualitative-scale
-:END:
 This scale is best set manually. =ggplot= could do a poor job choosing
 the colors. If you have more than eight categories then trying to encode
 them in color is the wrong approach. Use facets instead. Typically use
 three to four colors in a single plot
 
 * References
-:PROPERTIES:
-:CUSTOM_ID: references
-:END:
 - UT Austin DSC385

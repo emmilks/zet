@@ -19,8 +19,10 @@ head(NCbirths)
 
 ## Cursory Inspection
 
-The `MomAge` variable is represented as a double when it should
-be an int and `Gained` is representing numbers as characters. There is probably missing data in these columns. The `read_csv()` function misinterpreted these values and converted everything to a char to compensate.
+The `MomAge` variable is represented as a double when it should be an int and
+`Gained` is representing numbers as characters. There is probably missing data
+in these columns. The `read_csv()` function misinterpreted these values and
+converted everything to a char to compensate.
 
 ```{r}
 NCbirths |>
@@ -34,7 +36,8 @@ You have to be explicit with `read_csv` about how to handle missing data.
 NCbirths <- read_csv("https://wilkelab.org/DSC385/datasets/NCbirths.csv", na = c("", "NA", "#N/A"))
 ```
 
-R is powerful for data analysis because it has a built-in concept for missing data (NA).
+R is powerful for data analysis because it has a built-in concept for missing
+data (NA).
 
 ### Detailed Quality Checks: Look at all column names
 
@@ -42,7 +45,14 @@ R is powerful for data analysis because it has a built-in concept for missing da
 names(NCbirths)
 ```
 
-What is the difference between RaceMom and MomRace. Look at the data dictionary for this dataset. RaceMom encodes numerical values to various races from 1-8, and MomRace uses strings to explicitly specify the race for a particular person. Encoding numerical values to these sorts of columns can lead nonsensical things like calculating the mean. Be very careful you know what the numbers in a column represent. Read the data dictionary if one is supplied. If a data dictionary is not supplied, maybe find a different, better dataset to answer your question.
+What is the difference between RaceMom and MomRace. Look at the data dictionary
+for this dataset. RaceMom encodes numerical values to various races from 1-8,
+and MomRace uses strings to explicitly specify the race for a particular
+person. Encoding numerical values to these sorts of columns can lead
+nonsensical things like calculating the mean. Be very careful you know what the
+numbers in a column represent. Read the data dictionary if one is supplied. If
+a data dictionary is not supplied, maybe find a different, better dataset to
+answer your question.
 
 ### Detailed Quality Checks: Look at every data column
 
@@ -125,7 +135,9 @@ NCbirths_clean |>
 ```
 ### Make pairwise scatter plots
 
-After you have inspected all of the columns in the dataset, you should make pairwise scatterplots to learn how the different variables relate to each other.
+After you have inspected all of the columns in the dataset, you should make
+pairwise scatterplots to learn how the different variables relate to each
+other.
 
 ```{r}
 ggplot(NCbirths_clean, aes(Plural, Sex, color=Sex)) +
@@ -137,4 +149,6 @@ ggplot(NCbirths_clean, aes(Plural, MomAge, color=Sex)) +
   geom_point(position = "jitter", size = 0.5)
 ```
 
-Ideally make scatterplots for every variable against every other variable. This is the best way to understand your dataset. Make hypotheses as you go through this process. Can the dataset answer your hypotheses?
+Ideally make scatterplots for every variable against every other variable. This
+is the best way to understand your dataset. Make hypotheses as you go through
+this process. Can the dataset answer your hypotheses?

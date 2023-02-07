@@ -94,7 +94,7 @@ showing trends in the dataset across multiple distributions.
 
 #+begin_src R :exports both :results output graphics file :file ./images/dataviz/ridgeline-plot-example.png :session
   ggplot(lincoln_temps, aes(mean_temp, month_long)) +
-    geom_density_ridges()
+    geom_density_ridges(fill="steelblue")
 #+end_src
 
 #+RESULTS:

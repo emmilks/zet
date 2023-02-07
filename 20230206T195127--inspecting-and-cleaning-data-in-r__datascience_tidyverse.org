@@ -1,0 +1,26 @@
+#+title:      inspecting and cleaning data in R
+#+date:       [2023-02-06 Mon 19:51]
+#+filetags:   :datascience:tidyverse:
+#+identifier: 20230206T195127
+
+
+* Inspecting and Cleaning Data
+
+The dataset contains a sample of 1450 birth records in North Carolina.
+
+** Cursory Inspection
+
+#+begin_src R :session
+  library(tidyverse)
+  NCbirths <- read_csv("https://wilkelab.org/DSC385/datasets/NCbirths.csv")
+  summary(NCbirths)
+#+end_src
+
+#+RESULTS:
+| Min.   :   1.0 | Min.   :1.000 | Min.   :1.000 | Min.   :13.00 | Min.   :-999.00 | Min.   :1.000 | Min.   :1.000 | Length:1450      | Length:1450      | Min.   :0.0000 | Min.   : 12.0 | Min.   : 340.2 | Min.   :0.00000 | Min.   :0.0000 | Length:1450      |
+| 1st Qu.: 363.2 | 1st Qu.:1.000 | 1st Qu.:1.000 | 1st Qu.:22.00 | 1st Qu.:  38.00 | 1st Qu.:1.000 | 1st Qu.:1.000 | Class :character | Class :character | 1st Qu.:0.0000 | 1st Qu.:106.0 | 1st Qu.:3005.1 | 1st Qu.:0.00000 | 1st Qu.:0.0000 | Class :character |
+| Median : 725.5 | Median :1.000 | Median :1.000 | Median :26.00 | Median :  39.00 | Median :1.000 | Median :1.000 | Mode  :character | Mode  :character | Median :0.0000 | Median :118.0 | Median :3345.3 | Median :0.00000 | Median :0.0000 | Mode  :character |
+| Mean   : 725.5 | Mean   :1.037 | Mean   :1.487 | Mean   :26.76 | Mean   :  37.91 | Mean   :1.345 | Mean   :1.831 |                  |                  | Mean   :0.1446 | Mean   :116.2 | Mean   :3295.6 | Mean   :0.08621 | Mean   :0.1317 |                  |
+| 3rd Qu.:1087.8 | 3rd Qu.:1.000 | 3rd Qu.:2.000 | 3rd Qu.:31.00 | 3rd Qu.:  40.00 | 3rd Qu.:2.000 | 3rd Qu.:2.000 |                  |                  | 3rd Qu.:0.0000 | 3rd Qu.:130.0 | 3rd Qu.:3685.5 | 3rd Qu.:0.00000 | 3rd Qu.:0.0000 |                  |
+| Max.   :1450.0 | Max.   :3.000 | Max.   :2.000 | Max.   :43.00 | Max.   :  45.00 | Max.   :2.000 | Max.   :8.000 |                  |                  | Max.   :1.0000 | Max.   :181.0 | Max.   :5131.4 | Max.   :1.00000 | Max.   :1.0000 |                  |
+|                |               |               |               |                 |               |               |                  |                  | NA's   :5      |               |                |                 |                |                  |

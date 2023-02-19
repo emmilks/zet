@@ -14,7 +14,6 @@ library(tidyverse)
 NCbirths <- read_csv("https://wilkelab.org/DSC385/datasets/NCbirths.csv")
 
 head(NCbirths)
-
 ```
 
 ## Cursory Inspection
@@ -133,6 +132,7 @@ NCbirths_clean |>
     )
   )
 ```
+
 ### Make pairwise scatter plots
 
 After you have inspected all of the columns in the dataset, you should make
